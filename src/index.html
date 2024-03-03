@@ -1,0 +1,555 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+</head>
+<body class="bg-white">
+    <header>
+        <div class="carousel relative shadow-2xl bg-white h-screen m-3">
+            <div class="carousel-inner relative overflow-hidden w-full h-screen">
+              <!--Slide 1-->
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                    <div class="image2 rounded-md h-screen w-full bg-green-500 text-white text-5xl flex items-center justify-center">
+                        <h1 class="font-['Poppins'] font-medium">Jakarta untuk <span id="typed" class="typed"></span></h1>
+                    </div>
+                </div>
+                <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+                
+                <!--Slide 2-->
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                    <div class="image3 rounded-md h-screen w-full bg-green-500 text-white text-5xl flex items-center justify-center">
+                        <h1 class="font-['Poppins'] font-medium">Maju <span id="typed1" class="typed1"></span></h1>
+                    </div>
+                </div>
+                <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+                
+                <!--Slide 3-->
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                    <div class="image1 rounded-md h-screen w-full bg-green-500 text-white text-5xl text-center flex items-center justify-center">
+                        <h1 class="font-['Poppins'] font-medium">Sejahtera <span class="typed2" id="typed2"></span></h1>
+                    </div>
+                </div>
+                <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+                <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+        
+                <!-- Add additional indicators for each slide-->
+                <ol class="carousel-indicators">
+                    <li class="inline-block mr-3">
+                        <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                    <li class="inline-block mr-3">
+                        <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+                    </li>
+                </ol>
+                
+            </div>
+        </div>
+        <nav class="flex justify-between px-32 h-20 bg-orange-500 items-center text-slate-200">
+            <div class="brand">
+                <h1 class="font-extrabold font-['Oleo Script'] text-5xl">Perintis</h1>
+            </div>
+            <ul class="flex gap-8 font-semibold text-xl">
+                <li><a href="#about" class="hover:text-blue-700 font-['Montserrat']">About</a></li>
+                <li><a href="#rekreasi" class="hover:text-blue-700 font-['Montserrat']">Rekreasi</a></li>
+                <li><a href="#hiburan" class="hover:text-blue-700 font-['Montserrat']">Hiburan</a></li>
+                <li><a href="#edukasi" class="hover:text-blue-700 font-['Montserrat']">Edukasi</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <section id="about">
+        <div class="bgSantuy flex flex-col items-center p-10">
+            <div class="my-10">
+               <img src="../assets/PROV DKI JAKARTA_PNG.png" alt="logo dki Jakarta" width="200px">
+            </div>
+            <div class="text-center px-40">
+                <h2 class="font-['Manrope'] font-bold">DKI JAKARTA</h2>
+                <p class="deskripsi text-slate-50 font-bold font-sans text-base">Sebagai kota terpadat di Indonesia sekaligus tempat meleburnya keragaman Indonesia, Provinsi Daerah Khusus Ibukota (DKI) Jakarta menawarkan paket wisata lengkap bagi wisatawan. 
+                   Wisatawan dapat menikmati berbagai spot wisata sesuai kategori, mulai dari Rekreasi, hiburan, hingga edukasi.
+                   Banyaknya spot wisata yang terdapat di Provinsi DKI Jakarta membuat wisatawan tak cukup jika hanya mengunjungi kota ini satu kali. Namun, bagi wisatawan yang memiliki waktu terbatas, terdapat beberapa spot wisatawan kekinian yang dapat dikunjungi. 
+                   Tempat wisata tersebut bahkan menjadi tren wisata di Provinsi DKI Jakarta dari beragam spot ikonik yang sudah ada sebelumnya.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="rekreasi" class="mr-3 ml-3 bg-sky-600 px-8 py-2 rounded-md mt-10">
+        <div class="text-center m-8">
+            <h3 class="font-['Poppins'] font-bold text-4xl text-white">Rekreasi</h3>
+        </div>
+        <div class="my-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="border shadow-2xl shadow-white bg-amber-600 rounded-lg">
+                <div>
+                    <img src="../assets/rekreasi/GBK.jpg" alt="GBK" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Gelora Bung Karno</h3>
+                    <p class="m-3 text-justify">
+                        GBK (Gelora Bung Karno) adalah kompleks olahraga yang terletak di Jakarta,
+                        Indonesia. Gelora Bung Karno atau GBK terkenal sebagai spot olahraga terpopuler di
+                        Jakarta. Kompleks stadion yang luas dan megah ini memiliki beberapa spot lain yang
+                        menarik. Ditambah aksesnya yang berada di jantung kota, GBK bisa menjadi alternatif
+                        wisata saat akhir pekan. Selain tempatnya yang asyik, kamu bisa melakukan berbagai
+                        aktivitas seru di sana. .Meskipun GBK terkenal sebagai tempat untuk berbagai acara
+                        olahraga internasional, kompleks ini juga menawarkan berbagai fasilitas rekreasi bagi
+                        pengunjung yang ingin berolahraga atau bersantai. Beberapa fasilitas yang tersedia di
+                        Gelora Bung Karno, diantaranya lapangan olahraga, kolam renang, jogging track,
+                        taman, bahkan coffe shop sekalipun.
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://gbk.id/" class="text-blue-900">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/rekreasi/Dufan.jpg" alt="Dufan" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Dufan</h3>
+                    <p class="m-3 text-justify">
+                        Dufan adalah singkatan dari "Dunia Fantasi", sebuah taman hiburan yang terletak
+                        di Ancol, Jakarta Utara, Indonesia. Dunia Fantasi merupakan theme park pertama di
+                        Indonesia layaknya Disney Land, Universal Studios atau Trans Studio yang
+                        menawarkan berbagai atraksi, wahana permainan, dan hiburan bagi pengunjung dari
+                        berbagai usia. Dufan memiliki berbagai wahana permainan, seperti roller coaster,
+                        wahana air, wahana permainan anak-anak, dan banyak lagi.
+                        Sebagai tujuan wisata untuk keluarga, Dunia Fantasi sangat cocok untuk
+                        pengunjung yang ingin merasakan keseruan hiburan bermain di wahana permainan,
+                        menonton parade dan atraksi serta berpetualang menyusuri berbagai kawasan
+                        bertematik di Dufan.
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://www.ancol.com/unit-rekreasi/dufan-ancol--2" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/rekreasi/Seaworld.jpg" alt="Seaworld" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Sea World</h3>
+                    <p class="m-3 text-justify">
+                        Seaworld adalah sebuah taman hiburan yang terletak di kawasan Ancol, Jakarta Utara,
+                        Indonesia. Seaworld merupakan salah satu tempat wisata yang menawarkan
+                        pengalaman unik untuk melihat berbagai jenis hewan laut dan ikan dari berbagai
+                        belahan dunia. Seaworld memiliki berbagai atraksi dan wahana, seperti akuarium
+                        raksasa, pertunjukan lumba-lumba, dan berbagai wahana interaktif yang
+                        memungkinkan pengunjung untuk berinteraksi langsung dengan hewan laut. Selain
+                        menawarkan hiburan, Seaworld juga memiliki misi untuk memberikan edukasi tentang
+                        keanekaragaman hayati laut dan pentingnya menjaga lingkungan laut.
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://www.ancol.com/unit-rekreasi/sea-world-ancol--3" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/rekreasi/Taman Margasatwa Ragunan.jpg" alt="Ragunan" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Ragunan</h3>
+                    <p class="m-3 text-justify">
+                        Taman Margasatwa Ragunan adalah sebuah kebun binatang yang terletak di Jakarta
+                        Selatan, Indonesia. Taman ini merupakan salah satu kebun binatang terbesar di
+                        Indonesia dan memiliki luas sekitar 140 hektar. Taman Margasatwa Ragunan
+                        merupakan tempat yang menarik untuk dikunjungi bagi penggemar hewan dan alam,
+                        serta bagi keluarga yang mencari tempat rekreasi yang menyenangkan
+                        Taman Margasatwa Ragunan memiliki koleksi hewan yang cukup lengkap, termasuk
+                        hewan-hewan langka dan dilindungi. Selain itu, taman ini juga memiliki berbagai
+                        fasilitas pendukung seperti museum, area bermain anak-anak, dan tempat makan.
+                        Taman ini memiliki daya tarik tersendiri bagi para wisatawan lokal maupun
+                        mancanegara, terutama pada hari libur dan akhir pekan.
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://ragunanzoo.jakarta.go.id/language/id/" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/rekreasi/PantaiAncol.png" alt="PantaiAncol" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Pantai Ancol</h3>
+                    <p class="m-3 text-justify">
+                        Pantai Ancol adalah salah satu pantai yang terletak di kawasan Ancol, Jakarta Utara,
+                        Indonesia. Pantai Ancol merupakan salah satu destinasi wisata populer di Jakarta yang
+                        menawarkan pemandangan laut yang indah, pasir putih, dan berbagai fasilitas rekreasi.
+                        Di Pantai Ancol, pengunjung dapat menikmati berbagai aktivitas, seperti berenang,
+                        berjemur di pantai, atau bermain pasir. Selain itu, di sekitar Pantai Ancol juga terdapat
+                        berbagai wahana permainan air, seperti banana boat, jet ski, dan parasailing, yang dapat
+                        dinikmati oleh pengunjung yang menyukai aktivitas air.
+                        Selain pantai, di kawasan Ancol juga terdapat berbagai tempat wisata lainnya, seperti
+                        Dufan, SeaWorld, dan berbagai tempat hiburan lainnya. Pantai Ancol dan kawasan
+                        Ancol secara keseluruhan merupakan salah satu destinasi wisata terpopuler di Jakarta
+                        yang menawarkan berbagai aktivitas dan hiburan bagi pengunjung dari berbagai usia. 
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://www.ancol.com/" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/rekreasi/TMII.jpg" alt="TMII" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">TMII</h3>
+                    <p class="m-3 text-justify">
+                        Taman Mini Indonesia Indah (TMII) adalah sebuah taman rekreasi dan budaya
+                        yang terletak di Jakarta Timur, Indonesia. TMII memiliki luas sekitar 150 hektar dan
+                        terdiri dari berbagai paviliun yang mewakili provinsi-provinsi di Indonesia, termasuk
+                        miniatur rumah adat, taman-taman, dan fasilitas rekreasi lainnya. Di sini, pengunjung
+                        dapat menikmati berbagai atraksi budaya, seperti pertunjukan tari tradisional, pameran
+                        seni, dan festival budaya.
+                        Selain itu, TMII juga memiliki berbagai wahana rekreasi, seperti kereta gantung,
+                        perahu layar, dan kereta mini. Taman ini juga memiliki berbagai fasilitas pendukung,
+                        seperti restoran, toko suvenir, dan tempat parkir yang luas. 
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://tamanmini.com/taman_jelajah_indonesia/" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hiburan" class="mr-3 ml-3 bg-sky-600 px-8 py-2 rounded-md mt-14">
+        <div class="text-center m-8">
+            <h3 class="font-['Poppins'] font-bold text-4xl text-white">Hiburan</h3>
+        </div>
+        <div class="my-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                    <div>
+                        <img src="../assets/hiburan/Grand Indonesia.jpeg" alt="Grand Indonesia" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                    </div>
+                    <div class="font-sans text-white m-2">
+                        <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Grand Indonesia</h3>
+                        <p class="m-3 text-justify">
+                            Grand Indonesia Shopping Mall adalah pusat perbelanjaan besar, dengan lebih dari 200
+                            toko dan lebih dari 100 bar, kafe, serta restoran. Grand Indonesia Shopping Mall
+                            merupakan bagian dari Grand Indonesia Shopping Town, kompleks komersial dan
+                            residensial yang terdiri dari dua gedung, dihubungkan oleh jembatan yang saling
+                            terhubung.
+                            Anda dapat menemukan tren terbaru dari merek terkenal, termasuk Gap, Forever 21,
+                            H&M, dan Zara. Temukan beragam barang dari pakaian dewasa hingga anak-anak dan
+                            kosmetik di Central Department Store dan Seibu Department Store. Toko buku,
+                            perhiasan, gerai pakaian olah raga, dan toko mainan juga dapat Anda temukan di sini.
+                            Jika berkunjung kesini, pastikan untuk mengunjungi kawasan Crossroads of the World.
+                            Kawasan ini memiliki lanskap taman Asia yang indah, replika kincir angin dari Moulin
+                            Rouge Paris dan pasar bertema Maroko. Saksikan penampilan air mancur 5 menit,
+                            berlangsung setiap jam dengan diiringi musik dari lagu Frank Sinatra.
+                        </p>
+                        <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://www.grand-indonesia.com/grand-indonesia/" class="text-blue-500">Klik Disini</a></span>
+                    </div>
+                </div>
+                <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                    <div>
+                        <img src="../assets/hiburan/Kota Kasablanka.jpeg" alt="Mall Kota Kasablanka" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                    </div>
+                    <div class="font-sans text-white m-2">
+                        <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Mall Kota Kasablanka</h3>
+                        <p class="m-3 text-justify">
+                            Mall Kota Kasablanka adalah sebuah pusat perbelanjaan yang terletak di Jakarta
+                            Selatan. Mall ini dibuka pada tahun 2012 dan terletak di jalan Casablanca Raya, dekat
+                            dengan kawasan bisnis Kuningan dan Sudirman. Mall Kota Kasablanka menawarkan
+                            berbagai fasilitas dan layanan, termasuk pusat perbelanjaan, bioskop, restoran, kantor,
+                            dan apartemen. Mall ini menghadirkan beberapa toko dan merek ternama seperti
+                            Bershka, Calvin Klein hingga Dior sekalipun. Pengunjung dapat menemukan berbagai
+                            macam barang dan produk, mulai dari pakaian, aksesoris, elektronik, hingga
+                            perlengkapan rumah tangga.
+                        </p>
+                        <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://www.kotakasablanka.co.id/" class="text-blue-500">Klik Disini</a></span>
+                    </div>
+                </div>
+                <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                    <div>
+                        <img src="../assets/hiburan/Pondok Indah Mall.jpg" alt="Pondok Indah Mall" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                    </div>
+                    <div class="font-sans text-white m-2">
+                        <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Pondok Indah Mall</h3>
+                        <p class="m-3 text-justify">
+                            Pondok Indah Mall atau lebih dikenal dengan PIM adalah sebuah pusat perbelanjaan
+                            dan hiburan di kawasan Pondok Indah, Jakarta Selatan. Pondok Indah Mall terletak di
+                            persimpangan Jalan Metro Pondok Indah dan Jalan Haji Nawi. PIM yang dikelola
+                            Pondok Indah Group pertama kali diresmikan pada tahun 1991, yang kemudian
+                            bertambahnya PIM 2 pada tahun 2005, Street Gallery pada tahun 2015, dan terakhir
+                            diresmikannya PIM 3 pada tahun 2021.
+                            Uniknya terdapat sebuah jembatan penyembrangan yang menghubungi PIM 1 dan PIM
+                            2, begitu juga tersambungnya jembatan ini dengan halte Transjakarta, sehingga
+                            memudahkan para pengunjung untuk mengunjungi Pondok Indah Mall dengan
+                            transportasi umum. Dengan jumlah tenant yang mencapai hingga ratusan, PIM menjadi
+                            salah satu mall terbesar dan teramai di Jakarta Selatan.
+
+                            Pondok Indah mall menawarkan berbagai toko serta merek yang menjadi daya tarik
+                            bagi para pengunjung, seperti Birkenstock, Guess, Dior, hingga Uniqlo terbesar yang
+                            ada di Indonesia pun ada di PIM.                 
+                        </p>
+                        <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://www.pondokindahmall.co.id/ " class="text-blue-500">Klik Disini</a></span>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section id="edukasi" class="mr-3 ml-3 bg-sky-600 px-8 py-2 rounded-md mt-16">
+        <div class="text-center mt-6">
+            <h3 class="font-['Poppins'] font-bold text-4xl text-white">Edukasi</h3>
+        </div>
+        <div class="my-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/edukasi/Monumen Nasional (Monas).jpg" alt="Monas" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Monas</h3>
+                    <p class="m-3 text-justify">
+                        Berwisata ke Jakarta belum lengkap rasanya jika tidak mengunjungi kawasan Monas.
+                        Monas atau Monumen Nasional merupakan simbol kota Jakarta. Letaknya yang berada di
+                        pusat kota menjadikan monumen ini menjadi objek wisata yang banyak dikunjungi oleh
+                        para wisatawan. Monas adalah sebuah monumen yang dibangun pada tahun 1959 untuk
+                        mengenang jasa-jasa para pejuang kemerdekaan melawan penjajah Belanda. Monumen
+                        yang memiliki luas sekitar 80 hektar ini merupakan peninggalan sejarah dan kebanggaan
+                        masyarakat Jakarta.
+                        Selain bentuknya yang unik, daya tarik Monas juga terletak pada lapisan emas yang
+                        menutupi bagian atas monumen ini. Lapisan emas seberat 35 kg ini menjadi ciri khas
+                        monumen yang terletak di Jalan Medan Merdeka ini. Monas yang selalu ramai dikunjungi
+                        wisatawan dalam dan luar negeri ini juga memiliki pemandangan kota Jakarta yang dapat
+                        terlihat dari puncak Monas. Selain itu, juga terdapat fasilitas khusus berupa kendaraan bagi
+                        para wisatawan yang ingin berkeliling kawasan Monas.
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://jakarta-tourism.go.id/article/detail/monumen-nasional-
+                        monas" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/edukasi/Museum Bank Indonesia.jpg" alt="Museum Bank Indonesia" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Museum Bank Indonesia</h3>
+                    <p class="m-3 text-justify">
+                        Museum Bank Indonesia merupakan salah satu tempat wisata di kawasan Kota Tua,
+                        Taman Sari, Jakarta Barat. Museum ini ditetapkan sebagai cagar budaya oleh pemerintah
+                        karena memuat sejarah industri perbankan di Indonesia. Museum Bank Indonesia sering
+                        dijadikan tempat wisata edukasi oleh pelajar dan masyarakat umum. Hal yang menjadi
+                        daya tarik utama dari museum ini adalah Museum Bank Indonesia menampilkan sejarah
+                        perbankan di Indonesia, mulai dari masa kolonial hingga masa kini. Museum ini juga
+
+                        memiliki berbagai macam koleksi mata uang. Mulai dari uang kerajaan di Nusantara
+                        hingga Tanah Air ini merdeka.
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://www.bi.go.id/id/layanan/museum-bi/default.aspx" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/edukasi/Museum Fatahillah.jpg" alt="Museum Fatahillah" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Museum Fatahillah</h3>
+                    <p class="m-3 text-justify">
+                        Museum Sejarah Jakarta merupakan salah satu museum favorit di Jakarta. Kebanyakan
+                        orang mengenalnya dengan Museum Fatahillah. Museum ini berlokasi di Jalan Taman
+                        Fatahillah nomor 1, Pinangsia, Jakarta Barat. Tepatnya tengah-tengah kawasan Kota Tua.
+                        Koleksi Museum Sejarah Jakarta sebagian besar terdiri dari artefak-artefak peninggalan
+                        bangsa Belanda yang tinggal di Batavia sejak awal abad ke-16, antara lain furnitur,
+                        perlengkapan rumah tangga, senjata, tembikar, peta, dan buku.
+                        Fasilitas yang ditawarkan oleh museum ini, diantaranya perpustakaan yang memuat 1.200
+                        judul buku, ruang sinema untuk memutar dokumenter, ruang pameran, taman, hingga toko
+                        suvenir.
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://asosiasimuseumindonesia.org/anggota/64-museum-sejarah-kota-jakarta-museum-fatahillah.html" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/edukasi/Museum Satriamandala.jpg" alt="Museum Satria Mandala" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Museum Satria Mandala</h3>
+                    <p class="m-3 text-justify">
+                        Museum Satria Mandala merupakan museum yang melestarikan sejarah kemiliteran
+                        khususnya perjuangan Tentara Nasional Indonesia (TNI) mempertahankan tanah air.
+                        Museum ini merupakan salah satu sarana wisata edukasi. Pendirian museum ini juga
+                        merupakan upaya untuk menyampaikan secara visual kepada masyarakat nilai-nilai
+                        perjuangan 1945 dalam konteks perjuangan TNI. Berdasarkan album budaya Direktori
+                        Museum Indonesia, Museum Satria Mandala menyimpan berbagai benda bersejarah militer,
+                        khususnya yang berkaitan dengan perjuangan TNI pada tahun 1945 hingga saat ini.
+                        Beberapa koleksi dari museum ini, yaitu 74 diorama TNI dalam memperjuangkan NKRI,
+                        senjata militer, kendaraan militer perang, dokumen sejarah dan patung para pahlawan.
+                        Info lebih lanjut kunjungi
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://museum.kemdikbud.go.id/museum/profile/museum+satriamandala" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/edukasi/Museum Wayang.jpg" alt="Museum Wayang" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Museum Wayang</h3>
+                    <p class="m-3 text-justify">
+                        Bila Anda penggemar wayang, mungkin museum wayang bisa menjadi tempat yang pas
+                        untuk Anda melihat koleksi-koleksi wayang dari berbagai daerah di Indonesia. Museum ini
+                        memang menyimpan berbagai koleksi yang berhubungan dengan pembuatan dan
+                        pertunjukan wayang. Beragam koleksi wayang ada dimuseum yang letaknya di Jalan Pintu
+                        
+                        Besar Utara No. 27 Jakarta Barat ini. Wayang-wayang yang selama ini sudah dikenal
+                        dimasyarakat seperti wayang kulit, golek, potehi, beber, wayang kardus, wayang rumput,
+                        wayang kaca dan juga patung wayang menjadi koleksi museum ini.
+                        
+                        Tidak hanya koleksi wayang dari dalam negeri, di museum ini juga ditampilkan wayang-
+                        wayang dari beberapa negara asing seperti Suriname, China dan juga Thailand. Seluruh
+                        
+                        koleksi wayang di museum ini jumlahnya mencapai 6000 buah.
+                        Disamping memamerkan koleksi wayang, topeng, patung dan alat-alat musik tradisional,
+                        museum wayang memiliki serangkaian event pendukung. Diantara event pendukung
+                        tersebut antara lain pagelaran wayang yang rutin diadakan empat kali dalam sebulan.
+                        Tujuannya adalah menarik minat pengunjung untuk mengenal seni wayang lebih jauh.
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://museumwayang.business.site/" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/edukasi/Jakarta Aquarium.jpg" alt="Jakarta Aquarium" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Jakarta Aquarium</h3>
+                    <p class="m-3 text-justify">
+                        Jakarta Aquarium & Safari merupakan salah satu tempat wisata paling terkenal di ibu kota
+                        Jakarta. Aquarium ini disponsori oleh Taman Safari Indonesia dan bekerja sama dengan
+                        Aquaria Malaysia KLCC, menjadikannya sebagai aquarium indoor terbesar di Indonesia.
+                        Wisata ini menawarkan pemandangan dunia bawah laut yang eksotis dari akuariumnya yang
+                        spektakuler. Di dalamnya, Anda bisa melihat lebih dari 3.500 spesies hewan akuatik dan
+                        non-akuatik. Oleh karena itu, tak heran jika setiap hari Jakarta Aquarium & Safari ramai
+                        dikunjungi wisatawan, terutama menjelang musim liburan akhir tahun.
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://jakartaaquariumsafari.com" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/edukasi/Taman Ismail Marzuki.jpg" alt="Taman Ismail Marzuki" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Taman Ismail Marzuki</h3>
+                    <p class="m-3 text-justify">
+                        Taman Ismail Marzuki merupakan pusat seni dan budaya di Jakarta. Lebih tepatnya lokasi
+                        Taman Ismail Marzuki di mana adalah di Jalan Cikini Raya Nomor 73, Cikini, Menteng,
+                        Jakarta Pusat, DKI Jakarta. Taman ini merupakan salah satu destinasi wisata edukasi, seni,
+                        dan budaya yang wajib dikunjungi. Taman Ismail Marzuki merupakan pusat seni dan
+
+                        budaya yang sering menyelenggarakan berbagai jenis acara seni dan budaya. Taman Ismail
+                        Marzuki juga memiliki beragam fasilitas menarik untuk dikunjungi. Beberapa fasilitas itu
+                        seperti perpustakaan Jakarta, Jakarta planetarium, pameran seni, pertunjukan budaya, serta
+                        gedung arsitektur modern merupakan daya tarik utama dari taman ini.
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://dinaskebudayaan.jakarta.go.id/disbud_museum/taman-ismail-marzuki" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+            <div class="border shadow-2xl shadow-white bg-indigo-700 rounded-lg">
+                <div>
+                    <img src="../assets/edukasi/Taman Literasi Blok M.jpg" alt="Taman Literasi Blok M" class="rounded-t-lg cursor-pointer hover:translate-y-1 hover:scale-95 hover:duration-300">
+                </div>
+                <div class="font-sans text-white m-2">
+                    <h3 class="text-center my-5 font-bold text-3xl font-['Poppins']">Taman Liteasi Block M</h3>
+                    <p class="m-3 text-justify">
+                        Taman Literasi Blok M dengan nama Taman Literasi Martha Christina Tiahahu. Taman
+                        yang baru saja direvitalisasi ini merupakan bagian dari kawasan pembangunan berorientasi
+                        transit Blok M dan Sisingamangaraja. Taman Literasi Martha Christina Tiahahu ini
+                        dibangun untuk mengaktivasi ruang hijau dan publik kota DKI Jakarta.
+                        Ada berbagai fasilitas yang terdapat di Taman Literasi Blok M, Taman Literasi Martha
+                        Christina Tiahahu ini. Di antaranya, taman literasi yang baru direvitalisasi ini memiliki
+                        enam plaza yaitu Plaza Utara, Plaza Kabaresi, Plaza Bunga, Plaza Selatan, Plaza Anak serta
+                        Plaza Timur. Kemudian Galeri Jak Habitat, Paviliun Literasi, Amphitheater Banda, Taman
+                        Atap Abubu, Plaza Kabaresi, akses menuju MRT. Ada pula mushola dan ruang menyusui.
+                        Taman Literasi Blok M juga tersedia fasilitas perpustakaan, plaza anak, healing garden, dan
+                        amphitheater. 
+                    </p>
+                    <span class="mx-3 my-2"> Info lebih lanjut kunjungi <a href="https://www.instagram.com/tamanliterasi.jkt/" class="text-blue-500">Klik Disini</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mt-8">
+            <div>
+                <h3 class="text-center p-4 font-bold text-2xl">Lokasi DKI Jakarta</h3>
+            </div>
+            <div class="overflow-auto w-full">
+                <div class="flex gap-2">
+                    <div class="text-center border rounded-md border-slate-600 p-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126912.67026133447!2d106.82261773241139!3d-6.260971028440891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f2d148fbe713%3A0x6e667d52ebedf5a9!2sJakarta%20Timur%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1709468445957!5m2!1sid!2sid" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="p-4 text-xl font-bold">Jakarta Timur</p>
+                    </div>
+                    <div class="text-center border border-slate-600 rounded-md p-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126907.08080598332!2d106.71967703273548!3d-6.283929462780482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ec2422b0b3%3A0x39a0d0fe47404d02!2sJakarta%20Selatan%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1709468828389!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="p-4 text-xl font-bold">Jakarta Selatan</p>
+                    </div>
+                    <div class="text-center border border-slate-600 p-2 rounded-md">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126942.8076255867!2d106.75949808065766!3d-6.135708964439609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f58ab1132fd5%3A0x2623f5a6c83f3b27!2sJakarta%20Utara%2C%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1709468879736!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="p-4 text-xl font-bold">Jakarta Utara</p>
+                    </div>
+                    <div class="text-center border border-slate-600 p-2 rounded-md">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126937.01276208859!2d106.67485708099574!3d-6.15999159769513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7c9d110d719%3A0x300c5e82dd4b8a0!2sJakarta%20Barat%2C%20Kec.%20Kb.%20Jeruk%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1709468960569!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="p-4 text-xl font-bold">Jakarta Barat</p>
+                    </div>
+                    <div class="text-center border border-slate-600 p-2 rounded-md">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63465.84333879428!2d106.7952646835941!3d-6.182226079950298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f436b8c94b07%3A0x6ea6d5398b7c82f6!2sJakarta%20Pusat%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1709469170784!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="p-4 text-xl font-bold">Jakarta Pusat</p>
+                    </div>
+                    <div class="text-center border border-slate-600 p-2 rounded-md">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d508249.411725351!2d106.28732575411459!3d-5.6114646232126875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e41d68cd396621f%3A0xa06e871c66df72b3!2sKab.%20Administrasi%20Kepulauan%20Seribu%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1709469236204!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="p-4 text-xl font-bold">Kepulauan Seribu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class=" h-14 w-full bg-orange-500 flex justify-center items-center mt-8">
+        <div class="text-white font-bold text-xl">
+            <span>Copyright &copy <script>document.write(new Date().getFullYear())</script> Perintis</span>
+        </div>
+    </footer>
+    <script src="../dist/js/main.js"></script>
+    <script>
+        new Typed('#typed', {
+        strings : ['Indonesia'],
+        typeSpeed: 200,
+        delaySpeed: 200,
+        loop: true
+    })
+
+    new Typed('#typed1', {
+        strings : ['Kotanya'],
+        typeSpeed: 200,
+        delaySpeed: 200,
+        loop: true
+    })
+
+    new Typed('#typed2', {
+        strings : ['Warganya yeuyyy '],
+        typeSpeed: 200,
+        delaySpeed: 200,
+        loop: true
+    })
+    </script>
+</body>
+</html>

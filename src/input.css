@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+    font-size: 80px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+/* hamburger menu */
+nav .menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav .menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+nav .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* hamburger menu animasi */
+nav .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+nav .menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+nav .menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+    background-color: white;
+}
+
+nav .menu-toggle input:checked ~ span:nth-child(4){
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+nav .menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    header nav ul {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav .menu-toggle {
+        display: flex;
+    }
+
+    header nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 50vh;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        z-index: 1;
+        background-color: #fff;
+        color: black;
+        transform: translateX(100%);
+        transition: all 1s;
+        margin-top: 780px;
+        border-radius: 20px;
+    }
+
+    header nav ul.slide {
+        transform: translateX(0);
+    }
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+.carousel-item {
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+}
+
+.image1 {
+    background-image: url(../assets/BERE.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.image2 {
+    background-image: url(../assets/rekreasi/GBK.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.image3{
+    background-image: url(../assets/rekreasi/PantaiAncol.png);
+    background-size: cover;
+    background-position: center;
+}
+
+ul li a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.2rem;
+    border-bottom: 0.1rem solid rgb(40, 2, 116);
+    transform: scaleX(0);
+}
+
+ul li a:hover::after {
+    transform: scaleX(0.5);
+    transition: 0.2s linear;
+}
+
+.bgSantuy {
+    background-image: url(../assets/we.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: grey; 
+    mix-blend-mode: multiply;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.deskripsi {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
