@@ -118,8 +118,9 @@ nav .menu-toggle input:checked ~ span:nth-child(3){
         color: black;
         transform: translateX(100%);
         transition: all 1s;
-        margin-top: 780px;
+        margin-top: 560px;
         border-radius: 20px;
+        padding: 80px;
     }
 
     header nav ul.slide {
