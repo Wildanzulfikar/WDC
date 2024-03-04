@@ -581,14 +581,13 @@ video {
   margin: 2rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .my-2 {
@@ -601,14 +600,13 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .ml-2 {
@@ -637,6 +635,14 @@ video {
 
 .mt-16 {
   margin-top: 4rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .mt-6 {
@@ -687,6 +693,10 @@ video {
   width: 2.5rem;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -703,6 +713,10 @@ video {
   flex-direction: column;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -715,8 +729,8 @@ video {
   justify-content: space-around;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-8 {
@@ -756,14 +770,9 @@ video {
   border-width: 1px;
 }
 
-.border-slate-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(71 85 105 / var(--tw-border-opacity));
-}
-
-.bg-amber-600 {
+.bg-cyan-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(217 119 6 / var(--tw-bg-opacity));
+  background-color: rgb(8 145 178 / var(--tw-bg-opacity));
 }
 
 .bg-green-500 {
@@ -771,19 +780,14 @@ video {
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
 }
 
-.bg-indigo-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(67 56 202 / var(--tw-bg-opacity));
-}
-
 .bg-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
-.bg-sky-600 {
+.bg-red-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -803,9 +807,13 @@ video {
   padding: 1rem;
 }
 
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-8 {
@@ -842,11 +850,6 @@ video {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -862,9 +865,17 @@ video {
   line-height: 1;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -892,6 +903,10 @@ video {
   line-height: 1.25;
 }
 
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -907,14 +922,14 @@ video {
   color: rgb(30 58 138 / var(--tw-text-opacity));
 }
 
+.text-slate-100 {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
 .text-slate-200 {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-.text-slate-50 {
-  --tw-text-opacity: 1;
-  color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -932,6 +947,17 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .shadow-white {
   --tw-shadow-color: #fff;
   --tw-shadow: var(--tw-shadow-colored);
@@ -941,10 +967,10 @@ h2 {
   text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
+    #5E1675 0%,
+    #EE4266 29%,
+    #FFD23F 67%,
+    #337357 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -956,7 +982,6 @@ h2 {
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-  font-size: 80px;
 }
 
 @keyframes textclip {
@@ -1036,7 +1061,7 @@ nav .menu-toggle input:checked ~ span:nth-child(3){
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 870px) {
   nav .menu-toggle {
     display: flex;
   }
@@ -1055,9 +1080,9 @@ nav .menu-toggle input:checked ~ span:nth-child(3){
     color: black;
     transform: translateX(100%);
     transition: all 1s;
-    margin-top: 560px;
+    margin-top: 900px;
     border-radius: 20px;
-    padding: 80px;
+    padding: 20px;
   }
 
   header nav ul.slide {
@@ -1134,14 +1159,12 @@ ul li a:hover::after {
   background-image: url(../assets/we.jpg);
   background-position: center;
   background-size: cover;
-  background-color: grey;
-  mix-blend-mode: multiply;
   border-bottom-left-radius: 200px;
   border-bottom-right-radius: 200px;
 }
 
 .deskripsi {
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 3px 3px 3px black;
 }
 
 .hover\:translate-y-1:hover {
@@ -1174,6 +1197,13 @@ ul li a:hover::after {
   transition-duration: 300ms;
 }
 
+@media (min-width: 640px) {
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:ml-10 {
     margin-left: 2.5rem;
@@ -1183,7 +1213,36 @@ ul li a:hover::after {
     margin-right: 2.5rem;
   }
 
-  .md\:grid-cols-3 {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .md\:text-\[17px\] {
+    font-size: 17px;
+  }
+
+  .md\:text-\[60px\] {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .lg\:text-\[80px\] {
+    font-size: 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
