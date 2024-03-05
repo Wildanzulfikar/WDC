@@ -96,7 +96,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/src/output.css --watch"
+    "dev": "npx tailwindcss -i .dist/src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
