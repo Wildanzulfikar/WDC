@@ -1103,9 +1103,9 @@ nav .menu-toggle input:checked ~ span:nth-child(3){
     color: black;
     transform: translateX(100%);
     transition: all 1s;
-    margin-top: 900px;
+    margin-top: 570px;
     border-radius: 20px;
-    padding: 20px;
+    padding-x: 50px;
   }
 
   header nav ul.slide {
