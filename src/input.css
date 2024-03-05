@@ -158,19 +158,19 @@ nav .menu-toggle input:checked ~ span:nth-child(3){
 }
 
 .image1 {
-    background-image: url(../assets/BERE.jpeg);
+    background-image: url(../dist/img/BERE.jpeg);
     background-size: cover;
     background-position: center;
 }
 
 .image2 {
-    background-image: url(../assets/rekreasi/GBK.jpg);
+    background-image: url(../dist/img/rekreasi/GBK.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .image3{
-    background-image: url(../assets/rekreasi/PantaiAncol.png);
+    background-image: url(../dist/img/rekreasi/PantaiAncol.png);
     background-size: cover;
     background-position: center;
 }
@@ -189,7 +189,7 @@ ul li a:hover::after {
 }
 
 .bgSantuy {
-    background-image: url(../assets/we.jpg);
+    background-image: url(../dist/img/we.jpg);
     background-position: center;
     background-size: cover;
     border-bottom-left-radius: 200px;
