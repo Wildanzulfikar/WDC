@@ -157,24 +157,6 @@ nav .menu-toggle input:checked ~ span:nth-child(3){
     color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
 }
 
-.image1 {
-    background-image: url(../dist/img/BERE.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
-.image2 {
-    background-image: url(../dist/img/rekreasi/GBK.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.image3{
-    background-image: url(../dist/img/rekreasi/PantaiAncol.png);
-    background-size: cover;
-    background-position: center;
-}
-
 ul li a::after {
     content: '';
     display: block;
@@ -186,14 +168,6 @@ ul li a::after {
 ul li a:hover::after {
     transform: scaleX(0.5);
     transition: 0.2s linear;
-}
-
-.bgSantuy {
-    background-image: url(../dist/img/we.jpg);
-    background-position: center;
-    background-size: cover;
-    border-bottom-left-radius: 200px;
-    border-bottom-right-radius: 200px;
 }
 
 .deskripsi {
